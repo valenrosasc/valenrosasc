@@ -1,0 +1,54 @@
+<svg width="100%" viewBox="0 0 680 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes flyBee {
+        0%   { transform: translate(-60px, 10px); }
+        20%  { transform: translate(160px, -18px); }
+        40%  { transform: translate(330px, 8px); }
+        60%  { transform: translate(480px, -14px); }
+        80%  { transform: translate(600px, 6px); }
+        100% { transform: translate(720px, -10px); }
+      }
+      @keyframes flapWings {
+        0%, 100% { transform: scaleY(1); }
+        50%       { transform: scaleY(0.3); }
+      }
+      @keyframes bobBody {
+        0%, 100% { transform: translateY(0px); }
+        50%       { transform: translateY(3px); }
+      }
+      .bee-group { animation: flyBee 7s linear infinite; }
+      .bee-body  { animation: bobBody 0.4s ease-in-out infinite; }
+      .wing-top  { animation: flapWings 0.18s ease-in-out infinite; transform-origin: 50% 100%; }
+      .wing-bot  { animation: flapWings 0.18s ease-in-out infinite reverse; transform-origin: 50% 0%; }
+    </style>
+  </defs>
+
+  <rect width="680" height="260" fill="#FF6EB4" rx="0"/>
+  <path d="M0,160 C100,120 200,180 340,140 C480,100 580,160 680,130 L680,260 L0,260 Z" fill="#e8579e"/>
+  <path d="M0,200 C120,170 250,210 400,185 C520,165 620,200 680,180 L680,260 L0,260 Z" fill="#c93d85"/>
+
+  <text x="340" y="105" text-anchor="middle" font-family="'Fira Code', monospace" font-size="42" font-weight="700" fill="white" opacity="0.97">Hey! I'm Valentina Rosas</text>
+  <text x="340" y="148" text-anchor="middle" font-family="'Fira Code', monospace" font-size="20" fill="white" opacity="0.85">Software Developer · AI Enthusiast · QA Automation</text>
+
+  <g class="bee-group">
+    <g class="bee-body">
+      <ellipse cx="18" cy="26" rx="13" ry="10" fill="#FFD600"/>
+      <rect x="7" y="19" width="4" height="14" rx="2" fill="#222" opacity="0.7"/>
+      <rect x="13" y="19" width="4" height="14" rx="2" fill="#222" opacity="0.7"/>
+      <rect x="19" y="19" width="4" height="14" rx="2" fill="#222" opacity="0.7"/>
+      <circle cx="27" cy="24" r="7" fill="#FFD600"/>
+      <circle cx="29" cy="22" r="2.5" fill="#222" opacity="0.85"/>
+      <circle cx="30" cy="21.5" r="0.8" fill="white"/>
+      <ellipse cx="25" cy="30" rx="3" ry="1.5" fill="#e6b800"/>
+      <path d="M30,24 L36,22" stroke="#222" stroke-width="0.8" fill="none"/>
+      <path d="M30,23 L36,25" stroke="#222" stroke-width="0.8" fill="none"/>
+      <g class="wing-top">
+        <ellipse cx="14" cy="14" rx="9" ry="6" fill="white" opacity="0.75"/>
+      </g>
+      <g class="wing-bot">
+        <ellipse cx="22" cy="16" rx="7" ry="5" fill="white" opacity="0.6"/>
+      </g>
+    </g>
+  </g>
+</svg>

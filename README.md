@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=FF6EB4&center=true&vCenter=true&width=600&lines=Hey+everyone!+%F0%9F%91%8B;I'm+Valentina+Rosas+%F0%9F%8C%B8" />
+  <h1 align="center">Hey everyone! 👋 I'm Valentina Rosas 🌸</h1>
 </p>
 
 <p align="center">

@@ -1,0 +1,96 @@
+<svg width="100%" viewBox="0 0 680 270" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes flyBee {
+        0%   { transform: translate(-80px, 5px) scaleX(1); }
+        49%  { transform: translate(750px, -20px) scaleX(1); }
+        50%  { transform: translate(750px, -20px) scaleX(-1); }
+        99%  { transform: translate(-80px, 5px) scaleX(-1); }
+        100% { transform: translate(-80px, 5px) scaleX(1); }
+      }
+      @keyframes flapWing1 {
+        0%, 100% { transform: rotateX(0deg); }
+        50%       { transform: rotateX(70deg); }
+      }
+      @keyframes flapWing2 {
+        0%, 100% { transform: rotateX(0deg); }
+        50%       { transform: rotateX(-70deg); }
+      }
+      @keyframes bob {
+        0%, 100% { transform: translateY(0px) rotate(-3deg); }
+        50%       { transform: translateY(5px) rotate(3deg); }
+      }
+      @keyframes trail {
+        0%   { opacity: 0.7; }
+        100% { opacity: 0; }
+      }
+      .bee-group { animation: flyBee 9s linear infinite; }
+      .bee-inner { animation: bob 0.5s ease-in-out infinite; transform-origin: 35px 35px; }
+      .wing-l { animation: flapWing1 0.2s ease-in-out infinite; transform-origin: 32px 22px; }
+      .wing-r { animation: flapWing2 0.2s ease-in-out infinite; transform-origin: 38px 22px; }
+      .dot1 { animation: trail 0.8s ease-out infinite; animation-delay: 0s; }
+      .dot2 { animation: trail 0.8s ease-out infinite; animation-delay: 0.2s; }
+      .dot3 { animation: trail 0.8s ease-out infinite; animation-delay: 0.4s; }
+    </style>
+    <clipPath id="banner-clip">
+      <rect width="680" height="270"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#banner-clip)">
+    <rect width="680" height="270" fill="#FF6EB4"/>
+    <path d="M0,165 C80,130 180,185 340,148 C500,111 600,165 680,138 L680,270 L0,270 Z" fill="#e8579e"/>
+    <path d="M0,205 C130,178 260,215 400,192 C530,170 625,205 680,188 L680,270 L0,270 Z" fill="#c93d85"/>
+
+    <ellipse cx="80" cy="40" rx="18" ry="12" fill="white" opacity="0.07"/>
+    <ellipse cx="200" cy="25" rx="10" ry="7" fill="white" opacity="0.05"/>
+    <ellipse cx="560" cy="50" rx="22" ry="14" fill="white" opacity="0.06"/>
+    <ellipse cx="450" cy="22" rx="12" ry="8" fill="white" opacity="0.05"/>
+
+    <text x="340" y="108" text-anchor="middle" font-family="'Fira Code', monospace" font-size="40" font-weight="700" fill="white" opacity="0.97" letter-spacing="-1">Hey! I'm Valentina Rosas &#x1F338;</text>
+    <text x="340" y="150" text-anchor="middle" font-family="'Fira Code', monospace" font-size="18" fill="white" opacity="0.82">Software Developer · AI Enthusiast · QA Automation</text>
+
+    <g class="bee-group">
+      <g class="bee-inner">
+        <g class="wing-l">
+          <ellipse cx="18" cy="22" rx="14" ry="9" fill="#cceeff" opacity="0.88" stroke="#aaddff" stroke-width="0.5"/>
+          <ellipse cx="20" cy="30" rx="10" ry="6" fill="#cceeff" opacity="0.7" stroke="#aaddff" stroke-width="0.5"/>
+        </g>
+        <g class="wing-r">
+          <ellipse cx="52" cy="22" rx="14" ry="9" fill="#cceeff" opacity="0.88" stroke="#aaddff" stroke-width="0.5"/>
+          <ellipse cx="50" cy="30" rx="10" ry="6" fill="#cceeff" opacity="0.7" stroke="#aaddff" stroke-width="0.5"/>
+        </g>
+
+        <ellipse cx="35" cy="40" rx="17" ry="13" fill="#FFD600" stroke="#e6b800" stroke-width="0.8"/>
+        <rect x="22" y="33" width="5" height="14" rx="2.5" fill="#1a1a1a" opacity="0.75"/>
+        <rect x="30" y="31" width="5" height="18" rx="2.5" fill="#1a1a1a" opacity="0.75"/>
+        <rect x="38" y="31" width="5" height="18" rx="2.5" fill="#1a1a1a" opacity="0.75"/>
+        <rect x="46" y="33" width="5" height="14" rx="2.5" fill="#1a1a1a" opacity="0.75"/>
+
+        <circle cx="35" cy="27" r="11" fill="#FFD600" stroke="#e6b800" stroke-width="0.8"/>
+        <circle cx="31" cy="24" r="3.5" fill="#1a1a1a"/>
+        <circle cx="39" cy="24" r="3.5" fill="#1a1a1a"/>
+        <circle cx="32" cy="23" r="1.2" fill="white"/>
+        <circle cx="40" cy="23" r="1.2" fill="white"/>
+        <path d="M31,30 Q35,33 39,30" stroke="#c8930a" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="35" cy="20" rx="3" ry="2" fill="#e6b800"/>
+        <line x1="32" y1="18" x2="29" y2="13" stroke="#1a1a1a" stroke-width="1"/>
+        <line x1="38" y1="18" x2="41" y2="13" stroke="#1a1a1a" stroke-width="1"/>
+        <circle cx="29" cy="12" r="2" fill="#FF6EB4"/>
+        <circle cx="41" cy="12" r="2" fill="#FF6EB4"/>
+
+        <line x1="22" y1="44" x2="14" y2="50" stroke="#e6b800" stroke-width="1" stroke-linecap="round"/>
+        <line x1="22" y1="47" x2="13" y2="54" stroke="#e6b800" stroke-width="1" stroke-linecap="round"/>
+        <line x1="48" y1="44" x2="56" y2="50" stroke="#e6b800" stroke-width="1" stroke-linecap="round"/>
+        <line x1="48" y1="47" x2="57" y2="54" stroke="#e6b800" stroke-width="1" stroke-linecap="round"/>
+
+        <ellipse cx="35" cy="52" rx="6" ry="4" fill="#e6b800" stroke="#c8930a" stroke-width="0.5"/>
+        <path d="M35,56 Q32,61 35,64 Q38,61 35,56" fill="#e6b800" stroke="#c8930a" stroke-width="0.5"/>
+
+        <circle class="dot1" cx="-5" cy="35" r="3" fill="#FFD600" opacity="0.7"/>
+        <circle class="dot2" cx="-14" cy="32" r="2" fill="#FFD600" opacity="0.5"/>
+        <circle class="dot3" cx="-22" cy="36" r="1.5" fill="#FFD600" opacity="0.3"/>
+      </g>
+    </g>
+  </g>
+</svg>
